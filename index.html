@@ -1,1 +1,94 @@
 
+<html lang="en">
+<head>
+ <title>Portfolio Example</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <style>
+ body {
+     position: relative;
+ }
+ .affix {
+     top: 20px;
+     z-index: 1 !important;
+ }
+ div.col-sm-9 div {
+     height: 250px;
+     font-size: 28px;
+ }
+ #section1 {color: #fff; background-color: #1E88E5;}
+ #section2 {color: #fff; background-color: #673ab7;}
+ #section3 {color: #fff; background-color: #ff9800;}
+ #Email {color: #fff; background-color: #00bcd4;}
+ #Phone {color: #fff; background-color: #009688;}
+
+ @media screen and (max-width: 810px) {
+   #section1, #section2, #section3, #Email, #Phone  {
+       margin-left: 150px;
+   }
+ }
+ </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+
+<div class="container-fluid" style="background-color:#2196F3;color:#fff;height:220px;">
+ <h1>myPortFolio</h1>
+ <img width="10%" src="https://st.depositphotos.com/1431107/4033/v/950/depositphotos_40334707-stock-illustration-vector-help-sign.jpg">
+</div>
+<br>
+
+<div class="container">
+ <div class="row">
+   <nav class="col-sm-3" id="myScrollspy">
+     <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+       <li><a href="#section1">ABOUT</a></li>
+       <li><a href="#section2">PORTFOLIO</a></li>
+       <li><a href="#section3">CONTACT ME</a></li>
+       <li class="dropdown">
+         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+         <ul class="dropdown-menu">
+           <li><a href="#Email">Email</a></li>
+           <li><a href="#Phone">Phone</a></li>
+         </ul>
+       </li>
+     </ul>
+   </nav>
+   <div class="col-sm-9">
+     <div id="section1">
+       <h1>About Me: </h1>
+       <p>A wanna be Front-End Developer, looking for practical experience in professional programming.</p>
+     </div>
+     <div id="section2">
+       <h1>PORTFOLIO</h1>
+       <a href="https://codepen.io/CwryW/pen/NXEyMa" target="_blank">Ronaldinho: Truly one of the greats</a>
+     </div>
+     <div id="section3">
+       <h1>CONTACT ME</h1>
+       <p>via Email or Phone</p>
+     </div>
+     <div id="Email">
+       <h1>By Email</h1>
+       <p>xxx@x.com</p>
+     </div>
+     <div id="Phone">
+       <h1>By Phone</h1>
+       <p>xxx-xxx-xxxx</p>
+     </div>
+   </div>
+ </div>
+</div>
+
+</body>
+</html>
+  <footer style="font-weight:bold;background:  repeating-linear-gradient(
+     45deg,
+     gray 0px,
+     black 40px,
+     gray 40px,
+     black 80px
+ );
+width: 10%;
+ color:white;">&copy; 2018 CoryW</footer>
